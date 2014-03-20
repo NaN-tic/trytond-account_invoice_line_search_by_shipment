@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!-- The COPYRIGHT file at the top level of this repository contains the full
+     copyright notices and license terms. -->
+<data>
+    <xpath expr="/tree" position="inside">
+        <field name="customer_shipments" tree_invisible="1"/>
+        <field name="customer_shipment_returns" tree_invisible="1"/>
+        <field name="supplier_shipments" tree_invisible="1"/>
+        <field name="supplier_shipment_returns" tree_invisible="1"/>
+    </xpath>
+</data>

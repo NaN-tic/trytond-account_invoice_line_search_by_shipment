@@ -1,0 +1,19 @@
+# 
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "field:account.invoice.line,customer_shipment_returns:"
+msgid "Customer Shipment Returns"
+msgstr "Devolucions client"
+
+msgctxt "field:account.invoice.line,customer_shipments:"
+msgid "Customer Shipments"
+msgstr "Albarans client"
+
+msgctxt "field:account.invoice.line,supplier_shipment_returns:"
+msgid "Supplier Shipment Returns"
+msgstr "Devolucions proveïdor"
+
+msgctxt "field:account.invoice.line,supplier_shipments:"
+msgid "Supplier Shipments"
+msgstr "Albarans proveïdors"
