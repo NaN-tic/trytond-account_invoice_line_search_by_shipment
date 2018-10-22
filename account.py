@@ -5,10 +5,9 @@ from trytond.pool import Pool, PoolMeta
 from trytond.pyson import Eval
 
 __all__ = ['InvoiceLine']
-__metaclass__ = PoolMeta
 
 
-class InvoiceLine:
+class InvoiceLine(metaclass=PoolMeta):
     __name__ = 'account.invoice.line'
 
     customer_shipments = fields.Function(fields.One2Many('stock.shipment.out',
