@@ -13,25 +13,25 @@ class InvoiceLine:
 
     customer_shipments = fields.Function(fields.One2Many('stock.shipment.out',
             None, 'Customer Shipments', states={
-                'invisible': Eval('invoice_type', '') != 'out_invoice',
+                'invisible': Eval('invoice_type', '') != 'out',
                 }),
         'get_customer_shipments', searcher='search_customer_shipments')
     customer_shipment_returns = fields.Function(fields.One2Many(
             'stock.shipment.out.return', None, 'Customer Shipment Returns',
             states={
-                'invisible': Eval('invoice_type', '') != 'out_credit_note',
+                'invisible': Eval('invoice_type', '') != 'out',
                 }),
         'get_customer_shipment_returns',
         searcher='search_customer_shipment_returns')
     supplier_shipments = fields.Function(fields.One2Many('stock.shipment.in',
             None, 'Supplier Shipments', states={
-                'invisible': Eval('invoice_type', '') != 'in_invoice',
+                'invisible': Eval('invoice_type', '') != 'in',
                 }),
         'get_supplier_shipments', searcher='search_supplier_shipments')
     supplier_shipment_returns = fields.Function(fields.One2Many(
             'stock.shipment.in.return', None, 'Supplier Shipment Returns',
             states={
-                'invisible': Eval('invoice_type', '') != 'in_credit_note',
+                'invisible': Eval('invoice_type', '') != 'in',
                 }),
         'get_supplier_shipment_returns',
         searcher='search_supplier_shipment_returns')
